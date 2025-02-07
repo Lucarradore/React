@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  font-family: "Inter", sans-serif;
+  background: #000000;
+}
+
+/* Sección navbar */
+.navbar {
+  position: fixed;
+  top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.navbar-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 50rem;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  color: #6b7280;
+  opacity: 0.5;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e5e7eb;
+}
+
+.nav-border {
+  border-left: 2px solid rgba(156, 163, 175, 0.2);
+  padding-left: 0.5rem;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  color: #4b5563;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: #9ca3af;
+}
+
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+
+/* Sección hero */
+.hero-section {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  position: absolute;
+  inset: 0;
+  z-index: -20;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  background: linear-gradient(to bottom, transparent 70%, black);
+}
+
+.content {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+  height: 100vh;
+}
+
+.logo {
+  width: 100%;
+  padding: 1rem;
+}
+
+.text {
+  padding: 1rem;
+  font-size: 1.125rem;
+  letter-spacing: -0.05em;
+  color: white;
+}
+
+
+/* Sección about */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+}
+
+.about-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-image-container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.about-text-container {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.about-header {
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+}
+
+.about-highlight {
+  margin: 0.5rem 0;
+  height: 0.5rem;
+  width: 9rem;
+  background-color: #fca5a5;
+}
+
+.about-description {
+  margin: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about-button {
+  padding: 0.75rem 1.5rem;
+  color: white;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #374151;
+}
+
+.sobre-nosotros-main {
+  overflow-y: hidden;
+  color: #d1d5db; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Sección dishes */
+.dishes-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.dishes-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.25rem;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+}
+
+.dishes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .dishes-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.dishes-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dishes-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #2d3748;
+  color: white;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dishes-button:hover {
+  background-color: #4a5568; 
+}
+
+
+/* Sección Expertise */
+
+.expertise-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.expertise-title {
+  margin-bottom: 2rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.expertise-container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.expertise-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px dotted rgba(55, 65, 81, 0.4);
+  padding: 1rem 0;
+}
+
+.expertise-number {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+}
+
+.expertise-image {
+  flex-shrink: 0;
+  width: 33%;
+}
+
+.expertise-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.expertise-description {
+  padding-left: 2rem;
+}
+
+.expertise-title-item {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  color: #ec4899; 
+}
+
+.expertise-text {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  letter-spacing: -0.01em;
+}
+
+
+/* Sección mission */
+
+.mission-section {
+  padding: 2rem 0;
+}
+
+.mission-container {
+  text-align: center;
+}
+
+.mission-title {
+  margin-bottom: 2rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.mission-video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-video {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.mission-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1.5rem;
+}
+
+.mission-description {
+  position: absolute;
+  max-width: 32rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  color: white;
+  padding: 0 1rem;
+}
+
+
+/* Sección Review */
+
+.review-container {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.review-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.review-content {
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.review-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.review-avatar {
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+}
+
+.review-name-profession {
+  text-align: left;
+}
+
+.review-name {
+  font-weight: 600;
+}
+
+.review-profession {
+  font-size: 0.875rem;
+  color: #757575;
+}
+
+.review-navigation {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.review-nav-button {
+  background-color: #bdbdbd;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.review-nav-button:hover {
+  background-color: #616161;
+}
+
+.review-images {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.review-customer-img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .review-customer-img {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+
+/* Sección contact */
+
+.contact-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.contact-details {
+  color: #9e9e9e;
+}
+
+.contact-item {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 2px dotted #4f4f4f;
+  padding-bottom: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 1024px) {
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-item {
+    font-size: 1.125rem;
+  }
+}
+
+/* Sobre Nosotros */
+
+.sobre-nosotros-main {
+  overflow-y: hidden;
+  color: #e5e7eb; 
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Sección Footer */
+.footer-container {
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-text {
+  margin-top: 2rem;
+  color: #6b7280; 
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+/* App */
+.main-container {
+  overflow-y: hidden;
+  color: #e5e7eb; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+
+
