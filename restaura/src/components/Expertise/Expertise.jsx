@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"; 
 import { CUSINES } from "../../constants";
-import "../../src/index.css"; 
+import "../../../css/index.css"; 
 
 const containerVariants = {
   hidden: { opacity: 0 },

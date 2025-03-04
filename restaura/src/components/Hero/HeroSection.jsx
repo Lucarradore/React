@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import video from "../assets/hero.mp4";
-import logo from "../assets/logo.png";
-import hero from "../assets/hero.jpeg";
-import "../../src/index.css";
+import video from "../../assets/hero.mp4";
+import logo from "../../assets/logo.png";
+import hero from "../../assets/hero.jpeg";
+import "../../../css/index.css";
 
 const HeroSection = () => {
   return (

@@ -1,6 +1,6 @@
 import HeroSection from "../Hero/HeroSection"; 
-import Dishes from "../Dishes"; 
-import "../../src/index.css"; 
+import Dishes from "./Dishes"; 
+import "../../../css/index.css"; 
 
 const Dish = () => {
   return (

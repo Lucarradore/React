@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import about from "../assets/about.jpeg";
-import { ABOUT } from "../constants";
-import "../../src/index.css";
+import about from "../../assets/about.jpeg";
+import { ABOUT } from "../../constants";
+import "../../../css/index.css";
 
 const About = () => {
   return (
@@ -61,5 +61,6 @@ const About = () => {
 };
 
 export default About;
+
 
 

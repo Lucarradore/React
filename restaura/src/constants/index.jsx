@@ -1,5 +1,5 @@
-import dish1 from "../assets/dishes/dish1.jpg";
-import dish6 from "../assets/dishes/dish6.jpg";
+import dish1 from "../assets/dishes/dish1.jpeg";
+import dish6 from "../assets/dishes/dish6.jpeg";
 import dish11 from "../assets/dishes/dish11.jpg";
 import dish16 from "../assets/dishes/dish16.jpg";
 import dish21 from "../assets/dishes/dish21.jpg";

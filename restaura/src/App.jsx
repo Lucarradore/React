@@ -1,9 +1,10 @@
+import { useState } from "react"; 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/Hero/HeroSection";
 import Dish from "./components/Dish/Dish";
 import DishContent from "./components/Dish/DishContent";
-import About from "./components/About";
+import About from "./components/About/About";
 import Mission from "./components/Mission/Mission";
 import Expertise from "./components/Expertise/Expertise";
 import Contact from "./components/Contact/ContactPage";
@@ -12,18 +13,23 @@ import Footer from "./components/Footer/Footer";
 import Review from "./components/Review/Review";
 import SobreNosotros from "./components/About/AboutUs";
 import DishesConfirm from "./components/Dish/DishesConfirm"; 
-import "../src/index.css"
+import "../css/index.css"
 
 function App() {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
+
   return (
     <Router>
       <Routes>
-        {/* Ruta Principal */}
         <Route
           path="/"
           element={
             <>
-              <Navbar />
+              <Navbar toggleCart={toggleCart} />
               <main className="main-container">
                 <HeroSection />
                 <DishContent />
@@ -34,10 +40,10 @@ function App() {
                 <ContactSection />
                 <Footer />
               </main>
+              {isCartOpen && <div className="cart">Carrito abierto</div>}
             </>
           }
         />
-        {/* Otras rutas */}
         <Route
           path="/sobre-nosotros"
           element={

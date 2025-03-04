@@ -1,5 +1,5 @@
 import { CONTACT } from "../../constants"; 
-import "../../src/index.css"; 
+import "../../../css/index.css"; 
 
 const ContactSection = () => {
   return (

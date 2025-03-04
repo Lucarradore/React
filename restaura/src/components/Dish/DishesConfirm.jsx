@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import PropTypes from "prop-types";
-import "../../src/dish.css"; 
+import "../../../css/dish.css"; 
 
 const ConfirmationForm = () => {
   const location = useLocation(); 

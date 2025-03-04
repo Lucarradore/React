@@ -38,7 +38,7 @@
   .dish-card-button {
     width: 100%;
     background-color: #4a5568; 
-    color: #1a202c; 
+    color: #222538; 
     padding: 0.5rem;
     border-radius: 0.5rem;
     transition: background-color 0.3s;
@@ -96,6 +96,21 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  .quantity-button {
+    margin: 0 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quantity-button:hover {
+    background-color: #991b1b;
+    border: #991b1b;
+  }
   
   @media (min-width: 768px) {
     .dishes-grid {
@@ -138,12 +153,12 @@
   }
   
   .remove-item-button:hover {
-    color: red;
+    color: #991b1b;
   }
   
   .confirm-purchase-button,
   .clear-cart-button {
-    background-color: #3182ce; 
+    background-color: #0a692d; 
     color: white;
     padding: 0.75rem;
     border: none;
@@ -154,15 +169,15 @@
   }
   
   .confirm-purchase-button:hover {
-    background-color: #2b6cb0; 
+    background-color: #005b21; 
   }
   
   .clear-cart-button {
-    background-color: #e53e3e;
+    background-color: #991b1b;
   }
   
   .clear-cart-button:hover {
-    background-color: #c53030; 
+    background-color: #7d0a0a; 
   }
   
   /* DISH */

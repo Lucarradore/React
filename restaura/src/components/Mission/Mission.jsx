@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"; 
-import mission from "../assets/mission.mp4";
+import mission from "../../assets/mission.mp4";
 import { MISSION } from "../../constants";
-import missionImg from "../assets/mission.jpeg";
-import "../../src/index.css"; 
+import missionImg from "../../assets/mission.jpeg";
+import "../../../css/index.css"; 
 
 const Mission = () => {
   return (
