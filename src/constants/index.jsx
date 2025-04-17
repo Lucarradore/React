@@ -34,8 +34,6 @@ export const DISHES = [
     title: "Pescados", 
     description: "Pescados frescos.", 
     category: "Pescados" },
-
-
 ];
 
 export const LINKS = [
