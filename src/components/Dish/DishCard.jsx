@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import "../../../css/dish.css";
+import "../../../css/dish.css"; // Ruta relativa correcta
 
 const DishCard = ({ dish, onAddToCart, showDetails = false }) => {
   return (
-    <div className="dish-card">
+    <div className="dish-card" data-id={dish.id || "unknown"}>
       <img src={dish.image} alt={dish.title} className="dish-card-image" />
       <div className="dish-card-content">
         <h3 className="dish-card-title">{dish.title}</h3>
@@ -24,7 +24,7 @@ const DishCard = ({ dish, onAddToCart, showDetails = false }) => {
 
 DishCard.propTypes = {
   dish: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.number, // Changed to optional
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
