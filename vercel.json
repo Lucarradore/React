@@ -1,7 +1,5 @@
 {
-  "build": {
-    "framework": "vite"
-  }
+  "build": {}
 }
 
 
